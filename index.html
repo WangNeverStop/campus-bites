@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f0">
+  <meta name="description" content="饭点，校园食堂点评推荐。按预算和口味选一餐，查看菜品、窗口位置与近期评价。示例校园演示作品。">
+  <title>饭点 · 今天好好吃饭</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="#" aria-label="饭点首页"><span class="brand-icon">饭</span><span>饭点<small>CAMPUS BITES</small></span></a>
+    <nav aria-label="主要导航"><a href="#" data-nav="home">发现好吃的</a><a href="#saved" data-nav="saved">我的收藏 <span id="saved-count">0</span></a><a href="#mine" data-nav="mine">我的点评</a><a href="#meals" data-nav="meals">用餐记录</a></nav>
+    <div class="campus-tools"><span class="campus-identity"><span class="campus-crest" aria-hidden="true">禾</span><span>青禾大学<small>示例校园</small></span></span><button class="campus-badge" data-action="about">? 帮助</button></div>
+  </div></header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><a class="footer-brand" href="#">饭点 <span>认真选一餐，好好过一天。</span></a><p>示例校园 · 全部初始内容为演示数据 · 新增点评与收藏仅保存在当前浏览器</p><a href="#about">帮助与作品说明 ↗</a></footer>
+  <dialog id="review-dialog" aria-labelledby="review-title"></dialog>
+  <dialog id="pick-dialog" aria-labelledby="pick-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
